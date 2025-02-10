@@ -13,9 +13,14 @@ app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({extended : true})) ; 
 app.use("/articles" , router) ;
-mongoose.connect("mongodb://127.0.0.1:27017/articlesDB").then(() => {
-    console.log("Database Connected");
-}); 
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to MongoDB - articlesDB"))
+  .catch((err) => console.error("MongoDB Connection Error:", err));
+
 
 
 app.get("/" , (req , res) => {

@@ -54,9 +54,9 @@ export default function Articles() {
                                 <h3 className="text-xl font-bold text-white my-2">{article.title}</h3>
                                 <p className="text-gray-400 text-sm">{article.description}</p>
                                 <div className="flex items-center mt-4">
-                                    <div className="w-8 h-8 bg-gray-600 rounded-full"></div>
-                                    <p className="ml-2 text-gray-300 text-sm">Unknown Author</p>
-                                    <span className="ml-auto text-gray-400 text-xs">5 min read</span>
+                                    <div className="w-8 h-8 bg-gray-600 rounded-full"><img src="/user.png" /></div>
+                                    <p className="ml-2 text-gray-300 text-sm">{article.author}</p>
+                                    
                                 </div>
                             </div>
                         </div>
