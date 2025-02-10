@@ -1,27 +1,33 @@
-import React from "react";
-import { motion } from "framer-motion";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import FeaturedArticles from "./components/FeaturedArticles";
-import Footer from "./components/footer";
 
-
-
-
-
-
-
+import Home from "./pages/Home";
+import Articles from "./pages/Articles";
+import ArticlesID from "./pages/ArticleID";
+import AddArticles from "./pages/AddArticle";
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
 
 function App() {
+  const Router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home />,
+    },
+    {
+        path: "/articles",
+        element: <Articles />,
+    },
+    {
+        path: "/articles/:id",
+        element: <ArticlesID />,
+    },
+    {
+        path:"/articles/add",
+      element: <AddArticles />,
+    },
+    
+]);
   return (
-    <div className="max-w-screen-2xl mx-auto ">
-      <Navbar />
-      <Hero />
-      <FeaturedArticles />
-     
-      <Footer />
-    </div>
+    <RouterProvider router={Router} />
   );
 }
 
