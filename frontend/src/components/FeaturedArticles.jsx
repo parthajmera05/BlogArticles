@@ -63,7 +63,7 @@ export default function FeaturedArticles() {
           </div>
   
           <div className="flex justify-center mt-8">
-            <button className="bg-pink-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-pink-600 transition" onClick={() => window.location.href = "https://blog-articles-sigma.vercel.app/articles"} >
+            <button className="bg-pink-500 text-white py-2 px-6 rounded-full text-lg font-medium hover:bg-pink-600 transition" onClick={() => window.location.href = "/articles"} >
               View All Articles
             </button>
           </div>
