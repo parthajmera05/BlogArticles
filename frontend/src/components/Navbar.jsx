@@ -9,7 +9,7 @@ function Navbar() {
                 <ul className="flex gap-7">
                     <li className="text-gray-200 hover:text-pink-500"><a href="/">Home</a></li>
                     <li className="text-gray-200 hover:text-pink-500"><a href="/articles">Articles</a></li>
-                    <li className="text-gray-200 hover:text-pink-500"><a href="">About</a></li>
+                    <li className="text-gray-200 hover:text-pink-500"><a href="https://myportfolio-sandy-eight.vercel.app/">About</a></li>
                 </ul>
             </nav>
         </div>
