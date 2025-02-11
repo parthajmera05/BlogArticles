@@ -10,7 +10,7 @@ export default function Articles() {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/articles");
+                const response = await axios.get("https://blogarticlesbackend.onrender.com/articles");
                 console.log(response.data.message);
 
                 if (response.data.message === "No Articles") {

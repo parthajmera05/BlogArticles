@@ -44,10 +44,10 @@ const Hero = () => {
           Your daily source for insightful articles, thought-provoking discussions, and creative inspiration.
         </p>
         <div className="mt-6 flex justify-center space-x-4 relative z-10">
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-full text-lg" onClick={() => window.location.href = "http://localhost:5173/articles"}>
+          <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-full text-lg" onClick={() => window.location.href = "https://blog-articles-sigma.vercel.app/articles"}>
             Start Reading
           </button>
-          <button className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-semibold px-6 py-3 rounded-full text-lg" onClick={() => window.location.href = "http://localhost:5173/articles/add"}>
+          <button className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-semibold px-6 py-3 rounded-full text-lg" onClick={() => window.location.href = "https://blog-articles-sigma.vercel.app/articles/add"}>
             Add Articles
           </button>
         </div>

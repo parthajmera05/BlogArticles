@@ -9,19 +9,19 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom";
 function App() {
   const Router = createBrowserRouter([
     {
-        path: "/",
+        path: "https://blog-articles-sigma.vercel.app/",
         element: <Home />,
     },
     {
-        path: "/articles",
+        path: "https://blog-articles-sigma.vercel.app/articles",
         element: <Articles />,
     },
     {
-        path: "/articles/:id",
+        path: "https://blog-articles-sigma.vercel.app/articles/:id",
         element: <ArticlesID />,
     },
     {
-        path:"/articles/add",
+        path:"https://blog-articles-sigma.vercel.app/articles/add",
       element: <AddArticles />,
     },
     

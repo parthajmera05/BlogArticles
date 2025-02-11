@@ -8,7 +8,7 @@ export default function ArticleID() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/articles/${id}`)
+        fetch(`https://blogarticlesbackend.onrender.com/articles/${id}`)
             .then((response) => response.json())
             .then((data) => {
                 setArticle(data);

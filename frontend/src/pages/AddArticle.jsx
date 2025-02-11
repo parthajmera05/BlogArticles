@@ -19,7 +19,7 @@ export default function AddArticle() {
         console.log(article);
 
         try {
-            const response = await fetch("http://localhost:3000/articles", {
+            const response = await fetch("https://blogarticlesbackend.onrender.com/articles", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
